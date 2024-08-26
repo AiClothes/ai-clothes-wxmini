@@ -1,0 +1,53 @@
+// 小程序兼容
+page {
+  background-color: #ffffff;
+  // 标签切换部分
+  // 高度
+  --nutui-tabbar-height: 58px;
+  // 选中颜色
+  --nutui-tabbar-active-color: #000000;
+  // 未选中颜色
+  --nutui-tabbar-inactive-color: #9E9E9E;
+  // 上边框
+  --nutui-tabbar-border-top: 1px solid rgba(0, 0, 0, 0);
+  // 阴影
+  --nutui-tabbar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  // 标题字体大小
+  --nutui-tabbar-text-font-size: 12px;
+}
+
+.home {
+  height: calc(100vh - 98px);
+  //height: 3200rpx;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: flex-end;
+}
+
+.home-container {
+  height: 3200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  margin-bottom: 30px;
+}
+
+.title {
+  display: block;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

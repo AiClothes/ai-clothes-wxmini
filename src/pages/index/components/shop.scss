@@ -1,0 +1,130 @@
+/*shop.jsx*/
+.shop {
+  height: 100%;
+  //overflow: auto;
+
+  //color: red;
+  // 分类选择器部分
+  // 高度
+  --nutui-tabs-titles-height: 68px;
+  // 背景色
+  --nutui-tabs-titles-background-color: #FFFFFF;
+  // 字颜色
+  --nutui-tabs-titles-item-color: #9E9E9E;
+  // 字背景
+  --nutui-tabs-titles-item-active-color: #000000;
+  // 水平方向线条颜色
+  --nutui-tabs-tab-line-color: #FFE195;
+  // 水平方向线条宽度
+  --nutui-tabs-tab-line-width: 60rpx;
+  // 水平方向线条高度
+  --nutui-tabs-tab-line-height: 18rpx;
+  // 水平方向线条距离
+  --nutui-tabs-line-bottom: 36%;
+
+  .nut-tabs {
+    height: calc(100% - 82rpx);
+  }
+
+  .nut-tabs-content-wrap {
+    height: calc(100% - 68px);
+  }
+
+  .nut-tabs-content {
+    height: 100%;
+  }
+
+  .nut-tabs-titles-item-text {
+    position: relative;
+  }
+
+  .panel {
+    //height: calc(100% - 68px - 82rpx - 48px);
+    height: 100%;
+    //overflow: auto;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82rpx;
+  background-color: #F8F8F8;
+  margin: 0 40rpx;
+  //width: 100%;
+}
+
+.search-input {
+  background-color: #F8F8F8;
+}
+
+.search-btn {
+  width: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  //flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  border: 1px solid #F8F8F8;
+  //width: 50%;
+}
+
+.product_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_des {
+  color: #000000;
+  margin-top: 8rpx;
+  width: 100%;
+}
+
+.product_des_content {
+  //line-height: 1.5rpx; /* 设置行高 */
+  //height: 80rpx; /* 两行的高度 */
+  //overflow: hidden;
+  //text-overflow: ellipsis;
+  //white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.product_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 8rpx;
+}
+
+.product_price {
+  color: #000000;
+  font-size: 30rpx;
+}
+
+.product_pay_count {
+  color: #9E9E9E;
+  font-size: 20rpx;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  margin-top: 100rpx;
+  font-size: 30rpx;
+  color: #9E9E9E;
+}

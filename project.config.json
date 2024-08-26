@@ -1,0 +1,34 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "ai-clothes-wxmini",
+  "description": "AI服装 微信小程序端",
+  "appid": "wxa7dfe2f73abb0203",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "compileHotReLoad": false,
+    "postcss": true,
+    "minified": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "condition": true,
+    "compileWorklet": true,
+    "swc": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.5.0",
+  "srcMiniprogramRoot": "dist/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

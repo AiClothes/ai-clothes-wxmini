@@ -1,0 +1,18 @@
+$color-primary: #5596D2;
+
+// 小程序兼容
+page {
+  background-color: #ffffff;
+}
+
+.set_type {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.set_type-container {
+  height: 100%;
+  width: 100%;
+}

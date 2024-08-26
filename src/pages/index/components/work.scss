@@ -1,0 +1,99 @@
+/*work.jsx*/
+.work {
+  height: 100%;
+  //overflow: auto;
+
+  //color: red;
+  // 分类选择器部分
+  // 高度
+  --nutui-tabs-titles-height: 44px;
+  // 背景色
+  --nutui-tabs-titles-background-color: #FFFFFF;
+  // 字颜色
+  --nutui-tabs-titles-item-color: #9E9E9E;
+  // 字背景
+  --nutui-tabs-titles-item-active-color: #000000;
+  // 水平方向线条颜色
+  --nutui-tabs-tab-line-color: #FFE195;
+  // 水平方向线条宽度
+  --nutui-tabs-tab-line-width: 60rpx;
+  // 水平方向线条高度
+  --nutui-tabs-tab-line-height: 18rpx;
+  // 水平方向线条距离
+  --nutui-tabs-line-bottom: 36%;
+  // 间距
+  --nutui-tabs-tabpane-padding: 24rpx;
+
+  // grid部分
+  --nutui-grid-border-color: transparent;
+
+  .nut-tabs {
+    height: 100%;
+  }
+
+  .nut-tabs-content-wrap {
+    height: calc(100% - 44px);
+  }
+
+  .nut-tabs-content {
+    height: 100%;
+  }
+
+  .nut-tabs-titles-item-text {
+    position: relative;
+  }
+
+  .panel {
+    //height: calc(100% - 68px - 82rpx - 48px);
+    height: 100%;
+    //overflow: auto;
+  }
+}
+
+.work-item {
+  background-color: #9E9E9E;
+}
+
+.work-container {
+  height: calc(100% - 90rpx);
+  //overflow: auto;
+}
+
+.work-container2 {
+  height: 100%;
+  //overflow: auto;
+}
+
+.work-fav {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-fav-bg {
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  border-radius: 30rpx;
+}
+
+.work-items {
+  height: calc(100% - 60rpx);
+  //overflow: auto;
+}
+
+.work-items-load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c4c4c4;
+}
+
+.work-create {
+  height: 90rpx;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}

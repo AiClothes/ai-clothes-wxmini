@@ -1,0 +1,49 @@
+$color-primary: #5596D2;
+
+// 小程序兼容
+page {
+  background-color: #ffffff;
+}
+
+.about {
+  height: 100vh;
+  overflow: auto;
+}
+
+.about-container {
+  padding: 100rpx 80rpx 0rpx 80rpx;
+  height: 100%;
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //flex-direction: column;
+}
+
+.about-container-input-wrapper {
+  width: 100%;
+  //margin-bottom: 120rpx;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+}
+
+.about-container-text {
+  font-size: 24rpx;
+  color: #000000;
+  margin-bottom: 32rpx;
+  //margin-top: 240rpx;
+}
+
+.about-container-text2 {
+  font-size: 24rpx;
+  color: #000000;
+}
+
+.about-container-input {
+  width: 100%;
+  background-color: #F6F6F6;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  height: 100rpx;
+  margin-bottom: 220rpx;
+}

@@ -1,0 +1,44 @@
+$color-primary: #5596D2;
+
+// 小程序兼容
+page {
+  background-color: #ffffff;
+}
+
+.exchange_key {
+  height: 100vh;
+  overflow: auto;
+}
+
+.exchange_key-container {
+  padding: 0 40rpx;
+  height: 100%;
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //flex-direction: column;
+}
+
+.exchange_key-container-input-wrapper {
+  width: 100%;
+  //margin-bottom: 120rpx;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+}
+
+.exchange_key-container-text {
+  font-size: 28rpx;
+  color: #000000;
+  margin-bottom: 24rpx;
+  margin-top: 240rpx;
+}
+
+.exchange_key-container-input {
+  width: 100%;
+  background-color: #F6F6F6;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  height: 100rpx;
+  margin-bottom: 220rpx;
+}

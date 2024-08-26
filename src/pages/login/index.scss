@@ -1,0 +1,41 @@
+$color-primary: #5596D2;
+
+// 小程序兼容
+page {
+  background-color: #ffffff;
+}
+
+.login {
+  height: 100vh;
+  overflow: auto;
+}
+
+.login-container {
+  padding: 0 40rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-container-checkbox {
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  margin-top: 40rpx;
+  //align-self: flex-end;
+}
+
+.login-container-input-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-container-input {
+  width: 100%;
+}

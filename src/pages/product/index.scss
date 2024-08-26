@@ -1,0 +1,119 @@
+$color-primary: #5596D2;
+
+// 小程序兼容
+page {
+  background-color: #ffffff;
+  height: calc(100vh - (env(safe-area-inset-bottom) * var(--nutui-safe-area-multiple, 1)));
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  height: 100%;
+  //position: relative;
+  //display: flex;
+  //flex-direction: column;
+  //overflow: auto;
+}
+
+.product-container {
+  height: 100%;
+  //height: 100%;
+  //height: calc(100vh - 100rpx);
+  position: relative;
+}
+
+.product-container-scroll {
+  height: calc(100% - 100rpx);
+  overflow-y: auto;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 20px;
+  right: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator-text {
+  color: #9E9E9E;
+}
+
+.swiper {
+  padding: 0rpx 20rpx;
+  width: calc(100% - 40rpx);
+  height: 100%
+}
+
+.product-special {
+  width: calc(100%);
+  padding: 20rpx 0rpx;
+  //margin: 0rpx 20rpx;
+  background-color: rgb(242, 242, 242);
+}
+
+.product-content {
+  margin: 0rpx 20rpx;
+  overflow-x: auto;
+}
+
+.product-item-select {
+  border: 1px solid #9E9E9E;
+  overflow: hidden;
+}
+
+.product-detail {
+  // height: calc(100% - 40rpx - 400px - 20rpx - 40px - 2px);
+  padding: 20rpx 70rpx 0rpx 70rpx;
+}
+
+.product-detail-price {
+  font-size: 48rpx;
+  color: #000000;
+  font-weight: 600;
+}
+
+.product-detail-description {
+  color: #000000;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.product-detail-size {
+  margin-top: 20rpx;
+  width: 100%;
+  overflow-x: auto;
+  padding: 20rpx 0rpx;
+}
+
+.product-detail-sell-images {
+  margin-top: 20rpx;
+}
+
+.product-detail-btn {
+  border-radius: 4rpx;
+}
+
+.product-to-create-wrapper {
+  width: calc(100% - 40rpx - 40rpx);
+  height: 100rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 40rpx;
+}
+
+.product-to-create {
+  //margin-top: 120rpx;
+  width: 100%;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+  //height: 100rpx;
+  //position: absolute;
+  //bottom: 0;
+  //left: 0;
+}
