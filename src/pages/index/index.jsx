@@ -3,7 +3,7 @@ import {View} from '@tarojs/components'
 import {Tabbar, SafeArea, Image, Dialog} from "@nutui/nutui-react-taro"
 import './index.scss'
 import {useGlobalStore} from "../../store/global";
-import Taro, {getStorageSync, setNavigationBarTitle} from "@tarojs/taro";
+import Taro, {getStorageSync, setNavigationBarTitle, useShareAppMessage, useShareTimeline} from "@tarojs/taro";
 import {Work} from "./components/work";
 import {Shop} from "./components/shop";
 import {My} from "./components/my";
@@ -60,6 +60,29 @@ function Index() {
             }
         }
     ];
+
+    // 分享给朋友
+    useShareAppMessage((res) => {
+        if (res.from === 'button') {
+            // 来自页面内转发按钮
+            console.log(res.target)
+        }
+        if (res.from === 'menu') {
+            // 来自右上角转发菜单
+            console.log(res.target)
+        }
+        return {
+            title: '祈盛创意~一起来创作吧！',
+            path: '/pages/index/index',
+        }
+    })
+
+    // 分享到朋友圈
+    useShareTimeline(() => {
+        return {
+            title: '祈盛创意~一起来创作吧！',
+        }
+    })
 
     // 全局唯一一次的登陆检测状态
     useEffect(() => {

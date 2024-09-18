@@ -115,12 +115,12 @@ function Design() {
     return (<>
         <View className="design">
             <View className="design-container">
-                <View className="design-container-text">
+                {user_info && <View className="design-container-text">
                     <View className="design-price-real">
                         <IconFont fontClassName="iconfont" classPrefix='icon' name="price" size={18}/>
                         <View className="design-price-real-f">{user_info.gold.toFixed(2)}</View>
                     </View>
-                </View>
+                </View>}
                 <View className="design-prompt-wrapper">
                     <TextArea className="design-prompt" showCount value={prompt} onChange={(value) => setPrompt(value)} autoSize={false} placeholder={`请输入...`}/>
                     {prompt && (
@@ -230,7 +230,11 @@ function Design() {
                 <Button style={{}} block shape={`square`} type="primary" color="#5596D2" size="large" onClick={async () => {
                     // 前端校验是否够金币
                     // setShowNoMoney(true);
-                    if (user_info.gold < 10) {
+                    if (!is_login) {
+                        toLogin({});
+                        return;
+                    }
+                    if (user_info && user_info.gold < 10) {
                         setShowNoMoney(true);
                         return;
                     }
@@ -360,6 +364,11 @@ function Design() {
                     <View className="design-do">
                         <Button style={{width: `49%`}} shape={`square`} type="primary" color="#5596D2" fill={`outline`} size="large" onClick={() => {
                             setShowNoMoney(false);
+                            navigateTo({
+                                url: `/pages/gold/index`
+                            }).then((r) => {
+                                console.log(`已跳转充值`, r);
+                            });
                         }}>
                             充值
                         </Button>

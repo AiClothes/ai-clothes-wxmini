@@ -20,6 +20,7 @@ export default defineAppConfig({
         // 关于我们
         'pages/about/index',
         // 充值金币
+        'pages/gold/index',
     ],
     window: {
         backgroundTextStyle: 'light',

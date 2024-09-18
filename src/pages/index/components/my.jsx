@@ -68,7 +68,13 @@ export function My() {
                             <IconFont fontClassName="iconfont" classPrefix='icon' name="price" size={18}/>
                             <View className="my-login-price-real-f">{user_info.gold.toFixed(2)}</View>
                         </View>
-                        <Button shape={`square`} type="primary" color="#FF7A00" style={{borderRadius: `4rpx`}}>
+                        <Button shape={`square`} type="primary" color="#FF7A00" style={{borderRadius: `4rpx`}} onClick={()=>{
+                            navigateTo({
+                                url: `/pages/gold/index`
+                            }).then((r) => {
+                                console.log(`已跳转充值`, r);
+                            });
+                        }}>
                             充值
                         </Button>
                     </View>

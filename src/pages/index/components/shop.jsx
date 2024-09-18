@@ -11,7 +11,8 @@ import {toLogin} from "../../../utils/toLogin";
 
 function Product({product}) {
 
-    const {id, price, pay_account = 0, description, image} = product;
+    let {id, price, pay_account = 0, pay_account2 = '', description, image} = product;
+    if (pay_account2 === '0') pay_account2 = '';
     const {
         is_login, onChangeLogin,
     } = useUserStore();
@@ -41,10 +42,10 @@ function Product({product}) {
                 </View>
                 <View className="product_bottom">
                     <View className="product_price">
-                        ￥{price}
+                        ￥ {price}
                     </View>
                     <View className="product_pay_count">
-                        {pay_account}人付款
+                        {pay_account2 || pay_account}人付款
                     </View>
                 </View>
             </View>

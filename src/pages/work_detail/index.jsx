@@ -154,7 +154,11 @@ function WorkDetail() {
                 {/*不是抠图来的，没有子元素的*/}
                 {(children && children.length === 0 && create_type !== WorkCreateType.PHOTOSHOP) && (<>
                     <Button style={{flex: 1}} shape={`square`} type="primary" color="#5596D2" fill={`outline`} size="large" icon={<Logout/>} onClick={async () => {
-                        if (user_info.gold < 5) {
+                        if (!is_login) {
+                            toLogin({});
+                            return;
+                        }
+                        if (user_info && user_info.gold < 5) {
                             setShowNoMoney(true);
                             return;
                         }
@@ -392,6 +396,11 @@ function WorkDetail() {
                     <View className="design-do">
                         <Button style={{width: `49%`}} shape={`square`} type="primary" color="#5596D2" fill={`outline`} size="large" onClick={() => {
                             setShowNoMoney(false);
+                            navigateTo({
+                                url: `/pages/gold/index`
+                            }).then((r) => {
+                                console.log(`已跳转充值`, r);
+                            });
                         }}>
                             充值
                         </Button>
